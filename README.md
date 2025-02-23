@@ -22,7 +22,7 @@ This is a **9x9 Chess Game** with custom pieces, unique movement rules, and spec
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/9x9-chess-game.git
+   git clone https://github.com/ModernChessWarfare.git
 
 
 
