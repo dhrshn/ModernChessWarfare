@@ -19,107 +19,85 @@ This is a **9x9 Chess Game** with custom pieces, unique movement rules, and spec
 - **Timer**: Each player has a timer to track their remaining time.
 - **GUI**: Clean and intuitive interface built using Tkinter.
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ModernChessWarfare.git
 
 
 
-Key Features:
-Custom 9x9 Board: A larger board with additional rows and columns for more complex gameplay.
+## Key Features
 
-Unique Piece Movements:
+### Expanded 9x9 Board
+- A larger grid with additional rows and columns for deeper strategic gameplay.
 
-President: Moves one step in any direction.
+### Unique Piece Movements
+Each piece has distinct movement patterns:
 
-General: Moves across the board in N, NE, NW, E, and one step S.
+- **President** – Moves one step in any direction.
+- **General** – Moves across the board in **N, NE, NW, E**, and takes one step **S**.
+- **Vice-General** – Moves across the board in **S, SE, SW, E, W**, and takes one step **N**.
+- **Air Marshal** – Moves in **NE-W, SE-W, and N** directions.
+- **Navy Seal** – Moves in a unique **two-step pattern with directional turns**.
+- **Army Battalion** – Moves in straight lines across **N, S, E, W**.
+- **Soldier** – Moves like a traditional chess **pawn**.
 
-Vice-General: Moves across the board in S, SE, SW, E, W, and one step N.
+### Special Abilities
+- **President's Call to Arms** – Revive a captured Soldier.
+- **General’s Rally** – Grant a free move to an adjacent piece.
+- **Vice-General’s Fortify** – Create a defensive position.
+- **Air Marshal’s Air Strike** – Eliminate an enemy piece within a 3-square radius.
+- **Navy Seal’s Stealth** – Become invisible for one turn.
 
-Air Marshal: Moves across NE-W, SE-W, and N.
+### Gameplay Mechanics
+- **Turn-Based Play** – Players take turns, following a strict turn order.
+- **Move Highlighting** – Displays valid moves when a piece is selected.
+- **Undo/Redo Functionality** – Allows players to revert or reapply moves.
+- **Timer** – Each player has a countdown timer to manage their turns.
+- **Graphical User Interface (GUI)** – Built with **Tkinter** for an intuitive experience.
 
-Navy Seal: Moves in a unique 2-step pattern with directional turns.
+---
 
-Army Battalion: Moves across N, S, E, W.
+## Technologies Used
+- **Python** – Core language for game logic.
+- **Tkinter** – GUI framework for smooth user interaction.
+- **PIL (Pillow)** – Handles loading and resizing of piece images.
 
-Soldier: Moves like a traditional pawn.
+---
 
-Special Abilities:
+## How to Play
 
-President's Call to Arms: Revive a captured Soldier.
+1. **Select a Piece** – Click on a piece to highlight its valid moves.
+2. **Make a Move** – Click on a highlighted square to move the piece.
+3. **Use Special Abilities** – Select a piece with an ability and follow on-screen prompts.
+4. **Undo/Redo** – Use the "Undo" and "Redo" buttons to adjust moves.
+5. **Manage Time** – Keep track of the timer to avoid running out of time.
 
-General’s Rally: Grant a free move to an adjacent piece.
+---
 
-Vice-General’s Fortify: Create a defensive position.
+## Project Structure
+- **`chessengine.py`** – Contains the core game logic, including piece movements and special abilities.
+- **`chessui.py`** – Handles the graphical interface using Tkinter.
+- **`images/`** – Directory containing piece images.
+- **`README.md`** – Documentation for the project.
 
-Air Marshal’s Air Strike: Eliminate an enemy piece within a 3-square radius.
+---
 
-Navy Seal’s Stealth: Become invisible for one turn.
+## Contributing
+We welcome contributions! To contribute:
+1. **Fork** the repository.
+2. **Create a new branch** for your feature or bug fix.
+3. **Commit** your changes.
+4. **Submit a pull request** for review.
 
-Turn-Based Play: Players take turns, and the game enforces strict turn order.
+---
 
-Move Highlighting: Valid moves for the selected piece are highlighted.
+## License
+This project is licensed under the **MIT License**. See the `LICENSE` file for details.
 
-Undo/Redo Functionality: Players can undo or redo their moves.
+---
 
-Timer: Each player has a timer to track their remaining time.
-
-GUI: Built using Python’s Tkinter library for a clean and intuitive interface.
-
-Technologies Used:
-Python: Core programming language.
-
-Tkinter: GUI framework for the game interface.
-
-PIL (Pillow): For loading and resizing piece images.
-
+## Acknowledgments
+- Inspired by traditional chess and modern strategy games.
+- Developed using **Python and Tkinter**.
 
 
-
-   How to Play
-Select a Piece: Click on a piece to select it. Valid moves will be highlighted.
-
-Make a Move: Click on a highlighted square to move the selected piece.
-
-Special Abilities: Use special abilities by selecting the appropriate piece and following the on-screen instructions.
-
-Undo/Redo: Use the "Undo" and "Redo" buttons to revert or reapply moves.
-
-Timer: Keep an eye on the timer to avoid running out of time.
-
-Project Structure
-chessengine.py: Contains the game logic, piece movements, and special abilities.
-
-chessui.py: Contains the GUI implementation using Tkinter.
-
-images/: Directory containing piece images.
-
-README.md: This file.
-
-Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
-
-Fork the repository.
-
-Create a new branch for your feature or bugfix.
-
-Commit your changes.
-
-Submit a pull request.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-Acknowledgments
-Inspired by traditional chess and modern strategy games.
-
-Built with Python and Tkinter.
-
-Contact
-For questions or feedback, please contact:
-Dharshan M Nadar - 8180805320
-Prajwal Dhumal - 7219596005
 
 
 
